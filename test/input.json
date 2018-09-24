@@ -1,12 +1,14 @@
 {
 	"LANS": [
 		"en-US",
-		"zh-TW"
+		"zh-TW",
+		"zh-HK"
 	],
 	"DEFAULTS": {
 		"简体": {
 			"en-US": "simplified",
-			"zh-TW": "簡體"
+			"zh-TW": "簡體",
+			"zh-HK": "簡體"
 		},
 		"空白": {
 			"en-US": ""
@@ -21,7 +23,8 @@
 	"SUBTYPES": {
 		"subtype": {
 			"简体": {
-				"en-US": "simplified subtype"
+				"en-US": "simplified subtype",
+				"zh-HK": "簡體"
 			}
 		}
 	}
