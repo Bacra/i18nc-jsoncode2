@@ -2,7 +2,7 @@
 
 var expect			= require('expect.js');
 var escodegen		= require('escodegen');
-var parser			= require('../lib/parser');
+// var parser			= require('../lib/parser');
 var i18nGenerator	= require('../lib/generator');
 
 
