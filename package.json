@@ -1,11 +1,10 @@
 {
   "name": "i18nc-jsoncode2",
   "version": "2.0.0",
-  "description": "I18N JSON Code Tool for JS files",
+  "description": "I18N JSON Code Tool",
   "main": "index.js",
   "scripts": {
     "prepublish": "npm ls",
-    "build": "node test/build/i18nc-jsoncode",
     "lint": "eslint .",
     "test": "cross-env DEBUG=i18nc-jsoncode* mocha test/test_*",
     "test-cov": "istanbul cover _mocha -- test/test_* --reporter dot",
