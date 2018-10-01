@@ -2,9 +2,10 @@
 
 var expect				= require('expect.js');
 var astUtil				= require('i18nc-ast').util;
-var autoTestUtils		= require('./auto_test_utils');
+var testReq				= require('i18nc-test-req');
 var i18nGenerator		= require('../lib/generator');
-var requireAfterWrite	= autoTestUtils.requireAfterWrite('generator');
+var requireAfterWrite	= testReq('generator');
+testReq.ROOT_PATH		= __dirname;
 
 describe('#generator', function()
 {
@@ -26,7 +27,7 @@ describe('#generator', function()
 
 		var otherCode = requireAfterWrite('func_json.js', resultCode);
 
-		expect(autoTestUtils.code2arr(resultCode)).to.eql(autoTestUtils.code2arr(otherCode));
+		expect(testReq.code2arr(resultCode)).to.eql(testReq.code2arr(otherCode));
 	});
 
 
