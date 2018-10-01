@@ -5,7 +5,7 @@ var astUtil				= require('i18nc-ast').util;
 var testReq				= require('i18nc-test-req');
 var i18nGenerator		= require('../lib/generator');
 var requireAfterWrite	= testReq('generator');
-testReq.ROOT_PATH		= __dirname;
+testReq.ROOT_PATH		= __dirname + '/output';
 
 describe('#generator', function()
 {
